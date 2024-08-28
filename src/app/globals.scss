@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  // outline: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Montserrat";
+}
+
+header,
+footer {
+  width: 100%;
+  max-width: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $darkFontColor;
+
+  padding-left: $mobileSidePadding;
+  padding-right: $mobileSidePadding;
+
+  @media screen and ($tablet) {
+    padding-left: $tabletSidePadding;
+    padding-right: $tabletSidePadding;
+  }
+}
+
+section:nth-child(2n + 1) {
+  background-color: $darkBg;
+  color: $lightFontColor;
+}
+
+.container {
+  width: 100%;
+  max-width: $maxWidth;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}

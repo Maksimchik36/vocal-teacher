@@ -1,0 +1,66 @@
+@import "../../app/variables";
+
+.contactLinks {
+  display: flex;
+  gap: 20px;
+
+  & svg {
+    width: 16px;
+    height: 16px;
+    stroke: $darkFontColor;
+    stroke-width: 3px;
+
+    @media screen and ($tablet) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      scale: 0.9;
+    }
+  }
+
+  & .viber {
+    stroke-width: 0px;
+  }
+}
+
+.telegram {
+  fill: transparent;
+
+  &:hover,
+  &:focus {
+    stroke: #229ed9;
+  }
+}
+
+.phone {
+  fill: transparent;
+
+  &:hover,
+  &:focus {
+    // stroke: #ae9ef4;
+    stroke: green;
+    fill: green;
+  }
+}
+
+.email {
+
+  &:hover,
+  &:focus {
+    // stroke: #3e65cf;
+    // fill: #3e65cf;
+    stroke: red;
+    fill: red;
+  }
+}
+
+.viber {
+
+  &:hover,
+  &:focus {
+    fill: #7360f2;
+  }
+}

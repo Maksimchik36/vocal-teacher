@@ -1,0 +1,93 @@
+@import "../../app/variables";
+
+.section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media screen and ($tablet) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+.container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and ($tablet) {
+        justify-content: space-between;
+    }
+}
+
+.contactsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h2 {
+        font-size: 16px;
+        font-weight: 300;
+        color: $lightFontColor;
+        margin-bottom: 20px;
+
+        @media screen and ($tablet) {
+            font-size: 40px;
+        }
+
+        @media screen and ($desktop) {
+            font-size: 64px;
+        }
+    }
+
+    @media screen and ($tablet) {
+        gap: 40px;
+    }
+}
+
+.locationWrapper {
+    display: flex;
+    gap: 8px;
+
+    & svg {
+        width: 16px;
+        height: 20px;
+
+        @media screen and ($tablet) {
+            width: 18px;
+            height: 22px;
+        }
+    }
+
+    & p {
+        font-size: 12px;
+        font-weight: 300;
+
+        @media screen and ($tablet) {
+            font-size: 16px;
+        }
+
+        @media screen and ($desktop) {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and ($tablet) {
+        flex: 1;
+    }
+}
+
+.recordBtn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 32px;
+
+    @media screen and ($tablet) {
+        margin-right: 0;
+        padding: 12px 14px;
+    }
+
+    @media screen and ($desktop) {
+        padding: 10px 50px;
+    }
+}

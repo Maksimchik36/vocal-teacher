@@ -1,0 +1,120 @@
+@import "../../app/variables";
+
+
+.footer {
+    padding: 24px;
+
+    @media screen and ($tablet) {
+        padding: 68px 87px 10px;
+    }
+
+    @media screen and ($desktop) {
+        padding: 27px 122px 15px;
+    }
+}
+
+.container {
+    flex-direction: column;
+}
+
+.contentWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and ($tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 46px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and ($desktop) {
+        margin-bottom: 0px;
+    }
+}
+
+.navLinksWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    column-gap: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 36px;
+
+    @media screen and ($tablet) {
+        margin: 0;
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 18px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    @media screen and ($desktop) {
+        row-gap: 20px;
+        font-size: 24px;
+    }
+}
+
+.footerLocationWrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-right: auto;
+
+    & svg {
+        width: 16px;
+        height: 20px;
+
+        @media screen and ($tablet) {
+            width: 50px;
+            height: 36px;
+        }
+    }
+
+    & p {
+        font-size: 12px;
+        font-weight: 400;
+
+        @media screen and ($tablet) {
+            font-size: 16px;
+        }
+
+        @media screen and ($desktop) {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and ($tablet) {
+        // flex: 1;
+        margin: 0px;
+        align-items: center;
+    }
+}
+
+#contactLinks {
+    margin-left: auto;
+    margin-bottom: 26px;
+
+    @media screen and ($tablet) {
+        margin: 0;
+        align-items: center;
+    }
+}
+
+.dev {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    background: linear-gradient(90deg, rgba(122, 0, 47, 1), rgba(0, 0, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    @media screen and ($tablet) {
+        font-size: 36px;
+    }
+}

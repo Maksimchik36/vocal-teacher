@@ -1,0 +1,125 @@
+@import "../../app/variables";
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    justify-content: space-between;
+    max-width: $maxWidth;
+    z-index: 100;
+}
+
+.container {
+    background-color: $lightBg;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 32px;
+
+    padding-left: $mobileSidePadding;
+    padding-right: $mobileSidePadding;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and ($tablet) {
+        height: 56px;
+        margin-left: $tabletSidePadding;
+        margin-right: $tabletSidePadding;
+        margin-top: 32px;
+        border-radius: 28px;
+        border: 1px solid $darkBg;
+        padding-top: 6px;
+
+        & .burgerBtn {
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and ($laptop) {
+        padding-top: 0;
+        align-items: center;
+
+        & .burgerBtn {
+            margin-top: 0px;
+        }
+    }
+
+    @media screen and ($desktop) {
+        height: 60px;
+    }
+}
+
+.mobileMenuContainer {
+    height: 124px;
+
+    @media screen and ($tablet) {
+        height: 92px;
+    }
+
+    & .navLinksMobileVisible {
+        top: 86px;
+
+        @media screen and ($tablet) {
+            top: 56px;
+        }
+    }
+}
+
+.burgerBtn {
+    @media screen and ($laptop) {
+        display: none;
+    }
+}
+
+.navLinks {
+    position: absolute;
+    left: 24px;
+
+    top: 100%;
+    align-items: center;
+    font-size: 16px;
+
+    @media screen and ($laptop) {
+        position: static;
+        font-size: 20px;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+    }
+}
+
+#contactLinks {
+    margin-top: 10px;
+    display: none;
+
+    @media screen and ($tablet) {
+        display: flex;
+    }
+
+    @media screen and ($laptop) {
+        margin-top: 0px;
+    }
+}
+
+.btn {
+    margin-right: 0;
+    padding: 5px 10px;
+    background-size: 200%;
+    background-position: right;
+    margin-top: 0px;
+    margin-bottom: auto;
+
+    @media screen and ($tablet) {
+        padding: 10px 40px;
+    }
+
+    @media screen and ($laptop) {
+        margin-top: 6px;
+    }
+
+    @media screen and ($desktop) {
+        margin-top: auto;
+    }
+}

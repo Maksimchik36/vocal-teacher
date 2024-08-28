@@ -1,0 +1,102 @@
+@import "../../app/variables";
+
+#hero {
+    background-image: url("/images/hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 84px;
+    overflow: hidden;
+
+    @media screen and ($tablet) {
+        padding-top: 88px;
+    }
+
+    @media screen and (orientation: landscape) {
+        min-height: 100vh;
+    }
+
+    @media screen and ($desktop) {
+        padding-top: 92px;
+    }
+}
+
+.container {
+    // justify-content: space-between;
+    height: 100%;
+    // overflow: hidden;
+}
+
+.nameWrapper {
+    margin-top: auto;
+    margin-bottom: 12vw;
+
+    & h2 {
+        font-size: clamp(16px, 6vw, 96px);
+        font-weight: bold;
+        margin-bottom: 14px;
+        opacity: 0;
+        animation: title 1s linear forwards;
+    }
+
+    & h1 {
+        font-size: clamp(12px, 3vw, 40px);
+        font-weight: 300;
+        opacity: 0;
+
+        animation: title 1s linear forwards;
+        animation-delay: 1s;
+    }
+
+    @media screen and ($tablet) {
+        margin-bottom: auto;
+    }
+}
+
+@keyframes title {
+    to {
+        opacity: 1;
+    }
+}
+
+.imgWrapper {
+    position: relative;
+    flex: 1;
+
+    height: clamp(100px, 50vw, 500px);
+
+    // transform: translateX(100%);
+    // opacity: 0;
+
+    // animation: animate 0.5s linear 1.5s forwards;
+    & img {
+        object-fit: contain;
+    }
+
+    @media screen and (orientation: landscape) {
+        height: clamp(100px, 100vh, 500px);
+    }
+
+    @media screen and (orientation: portrait) {
+        height: clamp(100px, 50vh, 500px);
+    }
+}
+
+@keyframes animate {
+    to {
+        transform: translateX(12%);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animate {
+    to {
+        transform: translateX(12%);
+    }
+}
+
+@-webkit-keyframes animate {
+    to {
+        transform: translateX(12%);
+    }
+}
