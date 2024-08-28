@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.scss";
+import microphone from '../../../public/images/microphone.webp';
 
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
                     <h1>Викладач вокалу</h1>
                 </div>
                 <div className={styles.imgWrapper}>
-                    <Image src='./images/microphone.webp' alt="Picture of the author"
+                    <Image src={microphone} alt="Picture of the author"
                         fill
                         sizes='50vw'
                     />
