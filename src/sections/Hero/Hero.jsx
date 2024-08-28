@@ -14,7 +14,7 @@ const Hero = () => {
                     <h1>Викладач вокалу</h1>
                 </div>
                 <div className={styles.imgWrapper}>
-                    <Image src='/images/microphone.webp' alt="Picture of the author"
+                    <Image src='./images/microphone.webp' alt="Picture of the author"
                         fill
                         sizes='50vw'
                     />
