@@ -41,7 +41,8 @@
 
     &:hover,
     &:focus {
-        stroke: #ae9ef4;
+        stroke: green;
+        fill: green;
     }
 }
 
@@ -49,8 +50,8 @@
 
     &:hover,
     &:focus {
-        stroke: #3e65cf;
-        fill: #3e65cf;
+        stroke: red;
+        fill: red;
     }
 }
 

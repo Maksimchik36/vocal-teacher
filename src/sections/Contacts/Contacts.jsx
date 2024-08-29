@@ -18,7 +18,7 @@ const Contacts = () => {
                     <ContactLinksContacts />
                 </div>
                 <ButtonLink
-                    href="https://t.me/Natala_Boiko"
+                    href="https://t.me/+380505361693"
                     title="Записатися на безкоштовний урок"
                     className={styles.recordBtn}
                 />
